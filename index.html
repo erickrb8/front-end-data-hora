@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data e Hora em Tempo Real</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data e Hora em Tempo Real</h1>
+        <div class="locale-select">
+            <label for="locale">Escolha a localidade:</label>
+            <select id="locale">
+                <option value="pt-br">Português (Brasil)</option>
+                <option value="en-us">Inglês (EUA)</option>
+                <option value="ja-jp">Japonês (Japão)</option>
+                <option value="fr-fr">Francês (França)</option>
+                <option value="es-es">Espanhol (Espanha)</option>
+                <option value="de-de">Alemão (Alemanha)</option>
+            </select>
+        </div>        
+        <div class="time-display">
+            <div class="time-card">
+                <h2>Data</h2>
+                <p id="current-date">Carregando...</p>
+            </div>
+            <div class="time-card">
+                <h2>Hora</h2>
+                <p id="current-time">Carregando...</p>
+            </div>
+        </div>
+        <p class="info">Sincronizado com o servidor</p>
+        <p class="status" id="status-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.time-display {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.time-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 180px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.time-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #007bff, #00c4ff);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.time-card h2 {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.time-card p {
+    color: #007bff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.info {
+    color: #28a745;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.status {
+    margin-top: 10px;
+    color: #6c757d;
+    font-size: 14px;
+    height: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .time-display {
+        flex-direction: column;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+}
+
+.locale-select {
+    margin-bottom: 20px;
+}
+
+.locale-select label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.locale-select select {
+    padding: 5px 10px;
+    font-size: 14px;
+}
