@@ -1,12 +1,6 @@
 # ⏰ Data e Hora em Tempo Real por Localidade
 
-Este projeto exibe a **data e a hora atualizadas em tempo real**, com base na **localidade selecionada** pelo usuário, utilizando uma **API externa**. Ideal para aplicações que necessitam de sincronização com horário de servidor confiável e localização específica.
-
----
-
-## 📸 Demonstração
-
-![Preview do projeto](https://via.placeholder.com/800x400.png?text=Captura+de+Tela+do+Projeto)
+Este projeto exibe a **data e a hora atualizadas em tempo real**, com base na **localidade selecionada** pelo usuário, utilizando uma **API externa**.
 
 ---
 
@@ -16,8 +10,6 @@ Este projeto exibe a **data e a hora atualizadas em tempo real**, com base na **
 - 🌍 Seleção de localidade via dropdown (`pt-br`, `en-us`, etc.)
 - 🔄 Consulta automática à API: `/api/datetime/{locale}`
 - 🧠 Formatação de data/hora baseada no retorno da API
-- 📱 Layout responsivo
-
 ---
 
 ## 🧱 Estrutura do Projeto
